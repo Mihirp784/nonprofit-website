@@ -238,8 +238,7 @@ header > div > div > p > a {
 .issue-section {
   display: grid;
   grid-template-columns: 1fr;
-  width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 8%;
   background-image: url("../img/home/annie-spratt-135307-unsplash.png");
   background-size: cover;
   background-position: right;
@@ -275,15 +274,58 @@ header > div > div > p > a {
 }
 
 .issue-tag {
-  width: 40%;
+  width: 160px;
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   top: -6%;
-  left: 25%;
   text-align: center;
   font: 14px/17px Helvetica;
   color: #ffffff;
   background-color: #354463;
   padding: 10px;
+}
+
+.action-section {
+  padding: 10%;
+  padding-top: 20px;
+  padding-bottom: 5%;
+  margin: 0;
+  background-color: #c1f7d5;
+}
+
+.action-tag {
+  width: 160px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  text-align: center;
+  font: 14px/17px Helvetica;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #354463;
+  padding: 10px;
+}
+
+.action-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4%;
+  columns: 2;
+}
+
+.action-title {
+  text-align: left;
+  font: bold 18px/22px Helvetica;
+  color: #354463;
+}
+
+.action-text {
+  text-align: left;
+  font: 300 14px/20px Helvetica;
+  color: #354463;
 }
 
 /* Tablets */
@@ -366,6 +408,7 @@ header > div > div > p > a {
   #nav > p {
     display: inline;
     font: 16px/24px Helvetica;
+    white-space: nowrap;
     padding: 0 10% 0 0;
   }
 
@@ -379,9 +422,9 @@ header > div > div > p > a {
   }
 
   .issue-tag {
-    width: 30%;
     position: relative;
     left: 10%;
+    transform: none;
   }
 
   .issue-quote {
@@ -392,6 +435,18 @@ header > div > div > p > a {
 
   .issue-quote > p > a {
     font-size: 16px;
+  }
+
+  .action-container > * {
+    width: 80%;
+  }
+
+  .action-title {
+    font: bold 22px/28px Helvetica;
+  }
+
+  .action-text {
+    font: 300 16px/24px Helvetica;
   }
 }
 
@@ -480,7 +535,7 @@ header > div > div > p > a {
     columns: 6;
     flex-direction: row;
     align-items: center;
-    padding: 2%;
+    padding: 2% 10%;
   }
 
   .title {
@@ -506,18 +561,21 @@ header > div > div > p > a {
   }
 
   .issue-section {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10%;
   }
 
   #issue-hashtag {
-    flex: 3 0;
+    order: 2;
+    vertical-align: top;
+    padding: 0 15%;
   }
 
   .issue-container {
-    flex: 4 0;
-    margin: 5%;
+    order: 1;
+    width: 100%;
+    margin: 0;
   }
 
   .issue-tag {
@@ -533,5 +591,16 @@ header > div > div > p > a {
 
   .issue-quote > p > a {
     font-size: 16px;
+  }
+
+  .action-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .action-container > * {
+    width: auto;
+    justify-content: left;
   }
 }
