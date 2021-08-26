@@ -1,0 +1,313 @@
+body{
+    font: Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+#title-donation{
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    font: bold 18px/22px Helvetica;
+    line-height: normal;
+    color: #354463;
+    opacity: 1;
+}
+
+#showcase{
+    width: 100%;
+    background-image: url('../img/donation/annie-spratt-427340-unsplash.png');
+	background-position: center;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5%;
+}
+
+#italic-message{
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    font: italic bold 32px/46px Helvetica;
+    color: #FFFFFF;
+	padding: 5%;
+}
+
+.form{
+    width: 80%;
+	color: rgb(129, 82, 82);
+	background-color: #354463;
+	padding: 5%;
+}
+
+.form-heading,
+.payment-form-head {
+    font: bold 22px/28px Helvetica;
+    color: #fff;
+	padding-bottom: 16px;
+}
+
+.form-text {
+    padding: 8px;
+    font: normal normal normal 11px/13px Helvetica;
+    color: #FFFFFF;
+	flex-wrap: nowrap;
+}
+
+.input-name,
+.input-city,
+.input-email {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+.address input,
+.emailAdd input{
+	display: block;
+	width: 96%;
+}
+
+input,
+.state select {
+    font: normal 300 16px/24px Helvetica;
+	border: none;
+	border-bottom: 2px #c1f7d5 solid;
+	background-color: #354463;
+	width: 90%;
+    color: #FFF;
+	padding: 8px 0;
+}
+
+::placeholder{
+    color: #FFFFFF33;
+}
+
+.zip-code {
+	width: 40%;
+}
+
+.input-card-info{
+	display: flex;
+    align-content: flex-start;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+.expiration,
+.security{
+    width: 96%;
+}
+
+.card-inputs{
+    width: 40%;
+}
+
+
+.confirm-message {
+    font: bold 18px/22px Helvetica;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.pay {
+    text-align: center;
+    font: bold 16px/20px Helvetica;
+	color: #354463;
+	background-color: #C1F7D5;
+    padding: 12px;
+	border-radius: 25px;
+}
+
+.back-button{
+    margin-top: 24px;
+} 
+
+.back-button a {
+	color: #C1F7D5;
+    font: normal underline 300 14px/24px Helvetica;
+}
+
+.footer{
+    width: 80%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#bottom-name{
+    width: 60%;
+    padding-top: 16px;
+    font: bold 18px/22px Helvetica;
+    color: #354463;
+}
+
+#contact-us,
+#follow-us,
+#learn-more {
+    font: normal 11px/13px Helvetica;
+    color: #354463;
+}
+
+#contact-details{
+    margin-top: 8px;
+    font: normal 300 14px/20px Helvetica;
+    color: #354463;
+}
+
+.footer > div > ul {
+	list-style: none;
+    padding: 0;
+}
+
+.footer > div > ul > li > #list-item {
+    font: 14px Helvetica;
+    line-height: 10px;
+    text-decoration: underline;
+    color: #354463;
+}
+
+#bottom-hastag{
+    margin-top: 42px;
+    justify-self: right;
+    grid-column: 2;
+    font: bold italic 44px/46px Helvetica;
+    text-transform: uppercase;
+    color: #354463;
+}
+
+/* Tablets */
+@media screen and (min-width: 640px){
+    .buttons{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .buttons{
+        margin-top: 44px;
+    }
+
+    .pay{
+        flex: 1 0;
+    }
+
+    .back-button{
+        flex: 1 1;
+    }
+
+    .footer{
+        width: 80%;
+        padding: 5%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #bottom-hastag{
+        grid-column: 3;
+    }
+
+    #bottom-learn-more{
+        grid-column: 2;
+        align-self: center;
+    }
+}
+
+
+/* Desktops */
+@media screen and (min-width: 1008px){
+    #showcase > .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #italic-message{
+        flex: 1 1;
+    }
+
+    .form{
+        flex: 2 1;
+    }
+
+    .footer{
+        width: 80%;
+        padding: 5%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .footer > div{
+        align-self: start;
+    }
+
+    #bottom-name{
+        order: 1;
+        grid-column: auto;
+    }
+
+    #bottom-contact-us{
+        order: 2;
+        grid-column: auto;
+    }
+
+    #bottom-learn-more{
+        order: 3;
+        grid-column: auto;
+    }
+
+    #bottom-follow-us{
+        order: 4;
+        grid-column: auto;
+    }
+
+    #bottom-hastag{
+        order: 5;
+        grid-column: auto;
+    }
+    
+    #learn-more span{
+        display: none;
+    }
+
+    #learn-more:after{
+        content: "LINKS";
+    }
+
+    .footer > div > ul{
+        width: 80%;
+    }
+
+    .footer > div > ul li {
+        padding: .5em 0;
+        border-bottom: 1px solid #000;
+    }
+
+    .footer > div > ul li:last-child {
+        border-bottom: 0;
+    }
+
+    .footer > div > ul > li > #list-item {
+        font: 14px Helvetica;
+        line-height: 10px;
+        text-decoration: none;
+        color: #354463;
+    }
+    
+}
