@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-  width: 80%;
   margin: auto;
 }
 
@@ -24,12 +23,11 @@ body {
 }
 
 #showcase {
-  width: 100%;
   background-image: url("../img/donation/annie-spratt-427340-unsplash.png");
   background-position: center;
   display: flex;
   justify-content: space-evenly;
-  padding: 5%;
+  padding: 10%;
 }
 
 #italic-message {
@@ -42,8 +40,6 @@ body {
 }
 
 .form {
-  width: 80%;
-  color: rgb(129, 82, 82);
   background-color: #354463;
   padding: 5%;
 }
@@ -141,8 +137,7 @@ input,
 }
 
 .footer {
-  width: 80%;
-  padding: 5%;
+  padding: 10%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -189,11 +184,11 @@ input,
   color: #354463;
 }
 
-#header {
+.brand {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10%;
+  padding: 3% 10%;
 }
 
 .title {
@@ -371,8 +366,7 @@ header > div > div > p > a {
   }
 
   .footer {
-    width: 80%;
-    padding: 5%;
+    padding: 10%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -387,11 +381,11 @@ header > div > div > p > a {
     align-self: center;
   }
 
-  #header {
+  .brand {
     display: grid;
     columns: 4;
     align-items: stretch;
-    padding: 5%;
+    padding: 1% 10%;
   }
 
   .title {
@@ -409,7 +403,7 @@ header > div > div > p > a {
     display: inline;
     font: 16px/24px Helvetica;
     white-space: nowrap;
-    padding: 0 10% 0 0;
+    padding: 0 8% 0 0;
   }
 
   #donate {
@@ -466,8 +460,7 @@ header > div > div > p > a {
   }
 
   .footer {
-    width: 80%;
-    padding: 5%;
+    padding: 10%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -530,7 +523,7 @@ header > div > div > p > a {
     color: #354463;
   }
 
-  #header {
+  .brand {
     display: flex;
     columns: 6;
     flex-direction: row;
