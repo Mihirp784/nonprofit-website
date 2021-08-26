@@ -193,7 +193,7 @@ input,
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 5%;
+  padding: 10%;
 }
 
 .title {
