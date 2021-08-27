@@ -1,3 +1,18 @@
+@import url("https://p.typekit.net/p.css?s=1&k=wvl2kgf&ht=tk&f=18085&a=84797321&app=typekit&e=css");
+
+@font-face {
+  font-family: "flood-std";
+  src: url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .brand {
   display: flex;
   flex-direction: row;
@@ -57,7 +72,7 @@ header > div > div > p > a {
 #issue-hashtag {
   width: 80%;
   text-transform: uppercase;
-  font: italic bold 44px/46px Helvetica;
+  font: 44px/46px flood-std;
   color: #ffffff;
   padding: 10%;
 }
@@ -199,13 +214,90 @@ header > div > div > p > a {
 }
 
 .work-button {
-  margin-top: 8%;
+  width: 50%;
+  margin: 8% auto 0;
   font: bold 16px/20px Helvetica;
   color: #354463;
   padding: 12px;
-
   background: #c1f7d5;
   border-radius: 25px;
+}
+
+.facts-section {
+  padding: 10%;
+  background-image: url("../img/home/did-you-know-background.png");
+  background-position: left bottom;
+}
+
+.facts-quote {
+  width: 70%;
+  text-align: left;
+  font: 44px/46px flood-std;
+  color: #ffffff;
+}
+
+.facts-button {
+  width: max-content;
+  margin-top: 5%;
+  font: bold 16px/20px Helvetica;
+  color: #354463;
+  padding: 12px 16px;
+  background: #c1f7d5;
+  border-radius: 25px;
+}
+
+.facts-info {
+  margin-top: 10%;
+}
+
+.did-you-know-tag {
+  width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  text-align: center;
+  font: 14px/17px Helvetica;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #354463;
+  padding: 10px;
+}
+
+.facts-item {
+  background-color: #ffffff;
+  padding: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.facts-title {
+  font: bold 22px/28px Helvetica;
+  color: #354463;
+}
+
+.facts-text {
+  margin-top: 16px;
+  font: 300 14px/20px Helvetica;
+  color: #354463;
+}
+
+#facts-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10%;
+}
+
+#facts-links > img {
+  width: 16px;
+  height: 16px;
+  padding: 6px;
+  margin: auto 0;
+  object-fit: contain;
+  background: #c1f7d5;
+  border-radius: 50%;
 }
 
 /* Tablets */
@@ -325,6 +417,27 @@ header > div > div > p > a {
   .work-text {
     text-align: left;
     font: 300 16px/24px Helvetica;
+  }
+
+  .did-you-know-tag{
+    position: relative;
+    left: 10%;
+    transform: none;
+  }
+
+  .facts-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5%;
+  }
+
+  .call-to-action {
+    flex: 1 1;
+  }
+
+  .facts-info {
+    margin-top: -10%;
+    flex: 2 0;
   }
 }
 
@@ -464,9 +577,16 @@ header > div > div > p > a {
   }
 
   .work-button {
-    width: 50%;
+    margin: 0;
     padding: 12px;
+    width: max-content;
     justify-self: left;
     position: static;
+  }
+
+  .facts-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
   }
 }
