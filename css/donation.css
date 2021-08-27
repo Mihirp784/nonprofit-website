@@ -14,12 +14,9 @@
 }
 
 #italic-message {
-  width: 80%;
   text-align: center;
   text-transform: uppercase;
-  font: italic bold 32px/46px Helvetica;
   color: #ffffff;
-  padding: 5%;
 }
 
 .form {
@@ -167,13 +164,15 @@ input,
   #showcase > .container {
     display: flex;
     flex-direction: row-reverse;
+    align-content: start;
   }
 
   #italic-message {
-    flex: 1 1;
+    flex: 3 1;
+    margin: 0 0 0 5%;
   }
 
   .form {
-    flex: 2 1;
+    flex: 5 1;
   }
 }

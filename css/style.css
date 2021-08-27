@@ -1,3 +1,18 @@
+@import url("https://p.typekit.net/p.css?s=1&k=wvl2kgf&ht=tk&f=18085&a=84797321&app=typekit&e=css");
+
+@font-face {
+  font-family: "flood-std";
+  src: url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
 body {
   font: Helvetica;
   padding: 0;
@@ -15,7 +30,7 @@ body {
   margin: auto;
 }
 
-.footer {
+footer {
   padding: 10%;
   margin: auto;
   display: grid;
@@ -42,12 +57,12 @@ body {
   color: #354463;
 }
 
-.footer > div > ul {
+footer > div > ul {
   list-style: none;
   padding: 0;
 }
 
-.footer > div > ul > li > #list-item {
+footer > div > ul > li > #list-item {
   font: 14px Helvetica;
   line-height: 10px;
   text-decoration: underline;
@@ -58,14 +73,17 @@ body {
   margin-top: 42px;
   justify-self: right;
   grid-column: 2;
-  font: bold italic 44px/46px Helvetica;
   text-transform: uppercase;
   color: #354463;
 }
 
+.flood-font {
+  font: 44px/46px flood-std;
+}
+
 /* Tablets */
 @media screen and (min-width: 640px) {
-  .footer {
+  footer {
     padding: 10%;
     margin: auto;
     display: grid;
@@ -84,14 +102,14 @@ body {
 
 /* Desktops */
 @media screen and (min-width: 1008px) {
-  .footer {
+  footer {
     padding: 10%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .footer > div {
+  footer > div {
     align-self: start;
   }
 
@@ -128,20 +146,20 @@ body {
     content: "LINKS";
   }
 
-  .footer > div > ul {
+  footer > div > ul {
     width: 80%;
   }
 
-  .footer > div > ul li {
+  footer > div > ul li {
     padding: 8px 0;
     border-bottom: 1px solid #000;
   }
 
-  .footer > div > ul li:last-child {
+  footer > div > ul li:last-child {
     border-bottom: 0;
   }
 
-  .footer > div > ul > li > #list-item {
+  footer > div > ul > li > #list-item {
     font: 14px Helvetica;
     line-height: 10px;
     text-decoration: none;
