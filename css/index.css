@@ -283,6 +283,60 @@ header > div > div > p > a {
   border-radius: 50%;
 }
 
+.stories-section {
+  padding: 10%;
+  background-color: #ffffff;
+}
+
+.stories-tag {
+  width: max-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  text-align: center;
+  font: 14px/17px Helvetica;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #354463;
+  padding: 2% 8%;
+}
+
+.stories-image {
+  width: 100%;
+}
+
+.stories-content {
+  text-align: center;
+}
+
+.stories-details {
+  margin-top: 10%;
+  background-color: #354463;
+  padding: 10%;
+}
+
+.stories-msg {
+  font: bold 22px/28px Helvetica;
+  color: #ffffff;
+}
+
+.stories-name {
+  margin-top: 10%;
+  font: normal 11px/13px Helvetica;
+  color: #ffffff;
+}
+
+.stories-button {
+  width: max-content;
+  margin: 8% auto 0;
+  font: bold 16px/20px Helvetica;
+  color: #354463;
+  padding: 3% 5%;
+  background: #c1f7d5;
+  border-radius: 50px;
+}
+
 /* Tablets */
 @media screen and (min-width: 640px) {
   .brand {
@@ -421,6 +475,34 @@ header > div > div > p > a {
   .facts-info {
     margin-top: -10%;
     flex: 2 0;
+  }
+
+  .stories-tag {
+    position: relative;
+    left: 10%;
+    transform: none;
+  }
+
+  .stories-head {
+    width: auto;
+    margin-right: 10%;
+  }
+
+  .stories-content {
+    position: relative;
+    padding: 0 10% 0 0;
+    bottom: 100px;
+    left: 10%;
+    text-align: left;
+  }
+
+  .stories-button {
+    position: static;
+    float: left;
+  }
+
+  footer {
+    float: left;
   }
 }
 
@@ -571,5 +653,25 @@ header > div > div > p > a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5%;
+  }
+
+  .stories-section {
+    display: grid;
+    columns: 11;
+  }
+
+  .stories-content {
+    position: static;
+    margin: 0 10% 0 0;
+    padding: 0;
+    grid-column: 1 / 6;
+    align-self: center;
+    grid-row: 1;
+  }
+
+  .stories-head {
+    margin: -15% 0 0;
+    grid-column: 5 / 11;
+    grid-row: 1;
   }
 }
