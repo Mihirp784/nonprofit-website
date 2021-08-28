@@ -29,19 +29,9 @@
   border-radius: 25px;
 }
 
-#donate a {
-  text-decoration: none;
-}
-
 header > div > div > p {
   padding: 4px 0;
   margin: 0;
-}
-
-header > div > div > p > a {
-  font: 14px Helvetica;
-  text-decoration: none;
-  color: #354463;
 }
 
 .issue-section {
@@ -207,6 +197,10 @@ header > div > div > p > a {
   border-radius: 25px;
 }
 
+.work-button > a {
+  text-transform: none;
+}
+
 .facts-section {
   padding: 10%;
   background-image: url("../img/home/did-you-know-background.png");
@@ -337,10 +331,6 @@ header > div > div > p > a {
   border-radius: 50px;
 }
 
-.stories-button > a {
-  text-decoration: none;
-}
-
 .news-section {
   padding: 10%;
   background-color: #354463;
@@ -404,11 +394,6 @@ header > div > div > p > a {
   border-radius: 50px;
 }
 
-.news-button > a,
-.events-button > a {
-  text-decoration: none;
-}
-
 .subscribe-section {
   padding: 10%;
   background-color: #c1f7d5;
@@ -452,8 +437,12 @@ header > div > div > p > a {
 }
 
 .subscribe-button > a {
-  text-decoration: none;
   color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #354463;
 }
 
 /* Tablets */
@@ -490,6 +479,11 @@ header > div > div > p > a {
     justify-self: stretch;
     grid-column: 4;
     grid-row: 1 / 3;
+  }
+
+  #donate > a {
+    text-transform: none;
+    color: #354463;
   }
 
   .issue-tag {
