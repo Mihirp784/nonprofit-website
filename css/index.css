@@ -33,6 +33,7 @@ Header
 }
 
 header > div > div > p {
+  font: 300 14px/20px Helvetica;
   padding: 4px 0;
   margin: 0;
 }
@@ -61,6 +62,10 @@ header > div > div > p {
     font: 16px/24px Helvetica;
     white-space: nowrap;
     padding: 0 8% 0 0;
+  }
+
+  header > div > div > p {
+    font: 300 16px/24px Helvetica;
   }
 
   #donate {
@@ -420,6 +425,10 @@ Work-Section
 }
 
 @media screen and (min-width: 1008px) {
+  .work-section {
+    padding-top: 0;
+  }
+
   .work-tag {
     margin: 10% 0 5%;
   }
@@ -707,10 +716,7 @@ News and events section
 .news-section {
   background-color: #354463;
   color: #ffffff;
-}
-
-.news-quote {
-  color: #ffffff;
+  margin-top: 5%;
 }
 
 .news-item,
