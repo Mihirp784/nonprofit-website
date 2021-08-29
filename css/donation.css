@@ -10,7 +10,6 @@
   background-position: center;
   display: flex;
   justify-content: space-evenly;
-  padding: 10%;
 }
 
 #italic-message {
@@ -168,11 +167,16 @@ input,
   }
 
   #italic-message {
-    flex: 3 1;
+    flex: 2 1;
     margin: 0 0 0 5%;
   }
 
   .form {
-    flex: 5 1;
+    flex: 3 1;
+  }
+
+  footer > .flood-font {
+    font-size: 44px !important;
+    line-height: 46px !important;
   }
 }
