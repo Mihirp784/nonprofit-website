@@ -38,7 +38,7 @@ header > div > div > p {
   margin: 0;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .brand {
     display: grid;
     columns: 4;
@@ -83,7 +83,7 @@ header > div > div > p {
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   .brand {
     display: flex;
     columns: 6;
@@ -168,7 +168,7 @@ Issue-section
   padding: 10px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .issue-tag {
     position: relative;
     left: 10%;
@@ -186,7 +186,7 @@ Issue-section
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   .issue-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -264,7 +264,7 @@ Action-section
   color: #354463;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .action-container > * {
     width: 80%;
   }
@@ -278,7 +278,7 @@ Action-section
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   .action-container {
     display: flex;
     margin: 0;
@@ -367,7 +367,7 @@ Work-Section
   text-transform: none;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .work-tag {
     float: left;
   }
@@ -424,7 +424,7 @@ Work-Section
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   .work-section {
     padding-top: 0;
   }
@@ -575,7 +575,7 @@ Facts-section
   border-radius: 50%;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .did-you-know-tag {
     position: relative;
     left: 10%;
@@ -598,7 +598,7 @@ Facts-section
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   .facts-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -662,7 +662,7 @@ Stories-section
   border-radius: 50px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .stories-tag {
     position: relative;
     left: 10%;
@@ -688,7 +688,7 @@ Stories-section
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   .stories-section {
     display: grid;
     columns: 11;
@@ -772,7 +772,7 @@ News and events section
   border-radius: 50px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .events-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -847,7 +847,7 @@ News and events section
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   .news-title,
   .events-title {
     font: bold 44px/56px Helvetica;
@@ -913,13 +913,13 @@ a {
   color: #354463;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .subscribe-msg {
     width: 75%;
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   .subscribe-section {
     display: flex;
     flex-direction: row;
@@ -940,13 +940,13 @@ a {
 /*
 Footer
 */
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   #bottom-hastag {
     margin: 0;
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   footer > .flood-font {
     font-size: 44px !important;
     line-height: 46px !important;

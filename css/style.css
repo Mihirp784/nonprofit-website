@@ -80,7 +80,7 @@ footer > div > ul > li > #list-item {
 }
 
 /* Tablets */
-@media screen and (min-width: 640px) and (max-width: 1007px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   section {
     padding: 5% 10%;
   }
@@ -106,7 +106,7 @@ footer > div > ul > li > #list-item {
 }
 
 /* Desktops */
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1025px) {
   section {
     padding: 5% 10%;
   }
